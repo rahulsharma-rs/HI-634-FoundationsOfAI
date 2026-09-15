@@ -1,0 +1,10 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.csv text eol=lf
+# Preserve the downloaded UCI snapshot byte-for-byte so its published checksum
+# remains valid after cloning on every operating system.
+week4/data/breast_cancer_wisconsin_diagnostic.csv -text -diff
+*.ipynb text eol=lf

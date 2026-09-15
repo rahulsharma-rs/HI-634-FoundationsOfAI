@@ -1,0 +1,47 @@
+# Local Python environments
+.venv/
+venv/
+env/
+
+# Python caches, builds, and test artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+dist/
+build/
+
+# Jupyter local state
+.ipynb_checkpoints/
+.jupyter/
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Deliberately private data locations. Public or synthetic teaching data belongs
+# in weekX/data and must include provenance documentation.
+private_data/
+**/data/private/
+**/data/raw_private/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
