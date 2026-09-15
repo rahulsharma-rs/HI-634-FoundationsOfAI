@@ -53,23 +53,6 @@ cells = [
     ),
     md(
         """
-        ## Instructor agenda
-
-        | Time | Segment | Teaching move |
-        |---:|---|---|
-        | 0-15 min | Decision framing and task families | Ask what action changes before naming an algorithm |
-        | 15-30 min | Dataset provenance and inspection | Separate a convenient label from a validated construct |
-        | 30-50 min | Partitioning, preprocessing, and leakage | Use the time-travel question for every feature |
-        | 50-75 min | Baselines, metrics, calibration, thresholds | Translate each error into workload or missed cases |
-        | 75-90 min | Model comparison and interpretation | Require evidence before accepting complexity |
-        | 90-108 min | Clustering, regression, anomaly triage | Contrast the output and validation question for each task |
-        | 108-120 min | Responsible and Secure AI | Conduct a release-readiness critique and exit ticket |
-
-        **Before revealing code output**, ask learners to predict what they expect and what evidence would change their conclusion.
-        """
-    ),
-    md(
-        """
         # 1 Decision first not algorithm first
 
         A model is only one component of a health-service intervention. A defensible project specifies:
