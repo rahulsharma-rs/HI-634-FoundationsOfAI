@@ -61,10 +61,11 @@ Re-running the command is safe: it reuses `.venv` and brings it back to the vers
 .venv\Scripts\jupyter.exe lab
 ```
 
-Open the notebook under the week's `notebooks` folder. For Week 4, open:
+Open the notebook under the week's `notebooks` folder. The current lessons are:
 
 ```text
 week4/notebooks/week4_machine_learning_health_services.ipynb
+week5/notebooks/week5_natural_language_processing_health_services.ipynb
 ```
 
 Because JupyterLab is launched from `.venv`, its default Python kernel already contains the course packages.
@@ -91,6 +92,7 @@ If an installation becomes inconsistent, close JupyterLab, remove only the repos
 
 - `requirements.txt` is the pinned, shared environment for every published chapter.
 - When a future notebook imports a new package, its exact tested version is added to the root requirements file.
+- `scripts/generate_week_data.py` automatically runs each available `weekX/scripts/generate_synthetic_data.py` generator.
 - `scripts/execute_notebooks.py` automatically discovers notebooks under every `weekX/notebooks` directory, so continuous integration expands as weeks are added.
 - Every week's data remains under `weekX/data` with a README describing its source, license, checksum, or synthetic-generation method.
 

@@ -2,7 +2,7 @@
 
 This repository contains reproducible weekly notebooks and data for **HI 634 Foundations of Artificial Intelligence in Health Services**. Each week is self-contained so learners can run the examples, inspect assumptions, and extend the exercises without changing another week's materials.
 
-The Week 4 notebook is the first completed teaching module. It follows the course chapter on machine learning and data mining for health services and emphasizes decision framing, leakage-safe modeling, appropriate evaluation, cautious interpretation, Responsible AI, and Secure AI.
+The completed modules currently cover Week 4 machine learning and Week 5 natural language processing. Both emphasize decision framing, leakage-safe modeling, appropriate evaluation, cautious interpretation, Responsible AI, and Secure AI.
 
 > Educational use only. The examples do not create clinically validated models and must not be used for diagnosis, treatment, eligibility, payment, or other patient-level decisions.
 
@@ -15,14 +15,15 @@ CodeBaseHI634/
 ├── scripts/                 # Cross-platform setup and repository checks
 ├── INSTALL.md               # Detailed macOS, Linux, and Windows setup
 ├── requirements.txt         # Reproducible teaching dependencies
-└── week4/
-    ├── data/                # Public and clearly labeled synthetic datasets
-    ├── notebooks/           # Classroom notebooks
-    ├── scripts/             # Reproducible data and notebook builders
-    └── source_notes/        # Chapter inventory and teaching map
+├── week4/
+│   ├── data/                # Public and clearly labeled synthetic datasets
+│   ├── notebooks/           # Classroom notebooks
+│   ├── scripts/             # Reproducible data and notebook builders
+│   └── source_notes/        # Chapter inventory and teaching map
+└── week5/                   # NLP module using the same weekly structure
 ```
 
-Future modules should use the same pattern: `week5/data/`, `week5/notebooks/`, `week5/scripts/`, and `week5/source_notes/`.
+Future modules should use the same pattern: `weekX/data/`, `weekX/notebooks/`, `weekX/scripts/`, and `weekX/source_notes/`.
 
 ## Student quick start
 
@@ -46,7 +47,7 @@ py -3.14 scripts\setup_environment.py
 .venv\Scripts\jupyter.exe lab
 ```
 
-Open `week4/notebooks/week4_machine_learning_health_services.ipynb` in JupyterLab.
+Open a notebook under `week4/notebooks/` or `week5/notebooks/` in JupyterLab.
 
 ## Verify the teaching materials
 
@@ -62,16 +63,17 @@ Execute every published weekly notebook in a temporary output directory:
 .venv/bin/python scripts/execute_notebooks.py
 ```
 
-Recreate the deterministic synthetic datasets:
+Recreate all deterministic weekly synthetic datasets:
 
 ```bash
-.venv/bin/python week4/scripts/generate_synthetic_data.py
+.venv/bin/python scripts/generate_week_data.py
 ```
 
-Rebuild the notebook source after editing its builder:
+Rebuild notebook source after editing a week's builder:
 
 ```bash
 .venv/bin/python week4/scripts/build_week4_notebook.py
+.venv/bin/python week5/scripts/build_week5_notebook.py
 ```
 
 ## Adding a new teaching week

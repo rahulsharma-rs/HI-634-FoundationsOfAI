@@ -1,0 +1,33 @@
+training_id,text,label,need_type
+P001,Cannot pay for groceries.,1,food
+P002,Food runs out before payday.,1,food
+P003,Patient requests help obtaining meals.,1,food
+P004,The pantry is empty this week.,1,food
+P005,Requests assistance with rent.,1,housing
+P006,Eviction is expected this week.,1,housing
+P007,Lost housing and needs shelter.,1,housing
+P008,Cannot keep up with apartment costs.,1,housing
+P009,Cannot afford the medication copay.,1,medication_cost
+P010,Stopped medication because of cost.,1,medication_cost
+P011,Needs help paying for prescriptions.,1,medication_cost
+P012,Prescription was not filled because it was too expensive.,1,medication_cost
+P013,Has no ride to the clinic.,1,transportation
+P014,Bus fare is unaffordable.,1,transportation
+P015,Needs transportation for the follow-up visit.,1,transportation
+P016,Missed dialysis because a ride was unavailable.,1,transportation
+G001,Food supply is adequate.,0,food
+G002,Denies problems paying for groceries.,0,food
+G003,Food access has not been assessed.,0,food
+G004,A sibling reports running out of food.,0,food
+G005,Lives in stable housing.,0,housing
+G006,Rent is paid without difficulty.,0,housing
+G007,Housing needs are uncertain.,0,housing
+G008,Past housing difficulty has resolved.,0,housing
+G009,Medication costs are affordable.,0,medication_cost
+G010,No financial concerns about prescriptions are reported.,0,medication_cost
+G011,Medication affordability was not discussed.,0,medication_cost
+G012,The caregiver cannot afford a prescription.,0,medication_cost
+G013,Transportation to the clinic is available.,0,transportation
+G014,Has reliable transport.,0,transportation
+G015,Transportation status is unknown.,0,transportation
+G016,Previously lacked a ride but transportation is arranged now.,0,transportation

@@ -1,0 +1,11 @@
+case_id,text,reference_current_patient_need,documentation_status,language
+C001,Patient has no ride to dialysis.,1,affirmed,en
+C002,Patient has no transportation problems.,0,negated_or_stable,en
+C003,Housing risk cannot be excluded.,0,uncertain,en
+C004,"Hx housing difficulty, resolved.",0,historical_resolved,en
+C005,Food insecurity: [ ] Yes [ ] No,0,not_documented,en
+C006,No tiene transporte para la cita.,1,affirmed,es
+C007,Sibling cannot afford medication; patient reports no cost concern.,0,other_experiencer,en
+C008,Patient says the food supply is adequate.,0,negated_or_stable,en
+C009,Eviction notice received; shelter is needed tomorrow.,1,affirmed,en
+C010,Bus fare is too expensive for the follow-up appointment.,1,affirmed,en

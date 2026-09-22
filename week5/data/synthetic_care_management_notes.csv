@@ -1,0 +1,13 @@
+note_id,text,reference_current_patient_need,documentation_status,need_type
+N001,Patient reports difficulty paying rent.,1,affirmed,housing
+N002,Housing currently stable.,0,negated_or_stable,housing
+N003,Denies food insecurity.,0,negated_or_stable,food
+N004,Needs a ride to dialysis appointments.,1,affirmed,transportation
+N005,No transportation problems reported.,0,negated_or_stable,transportation
+N006,Pt unable to afford prescribed medication.,1,affirmed,medication_cost
+N007,Patient reports running out of food.,1,affirmed,food
+N008,Housing situation is unclear; assessment requested.,0,uncertain,housing
+N009,Social history not documented.,0,not_documented,none
+N010,Mother cannot pay rent; patient has stable housing.,0,other_experiencer,housing
+N011,Previously homeless; now has stable housing.,0,historical_resolved,housing
+N012,Patient reports chest pain.,0,unrelated,none
