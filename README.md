@@ -2,7 +2,7 @@
 
 This repository contains reproducible weekly notebooks and data for **HI 634 Foundations of Artificial Intelligence in Health Services**. Each week is self-contained so learners can run the examples, inspect assumptions, and extend the exercises without changing another week's materials.
 
-The completed modules currently cover Week 4 machine learning and Week 5 natural language processing. Both emphasize decision framing, leakage-safe modeling, appropriate evaluation, cautious interpretation, Responsible AI, and Secure AI.
+The modules cover Week 4 machine learning, Week 5 natural language processing, and a Colab-based Week 7 lesson on building a tiny language model. The offline Week 4 and Week 5 materials emphasize decision framing, leakage-safe modeling, appropriate evaluation, cautious interpretation, Responsible AI, and Secure AI.
 
 > Educational use only. The examples do not create clinically validated models and must not be used for diagnosis, treatment, eligibility, payment, or other patient-level decisions.
 
@@ -20,10 +20,11 @@ CodeBaseHI634/
 │   ├── notebooks/           # Classroom notebooks
 │   ├── scripts/             # Reproducible data and notebook builders
 │   └── source_notes/        # Chapter inventory and teaching map
-└── week5/                   # NLP module using the same weekly structure
+├── week5/                   # NLP module using the same weekly structure
+└── week7/                   # Colab-based tiny LLM lesson and earlier source version
 ```
 
-Future modules should use the same pattern: `weekX/data/`, `weekX/notebooks/`, `weekX/scripts/`, and `weekX/source_notes/`.
+Future offline modules should use the same pattern: `weekX/data/`, `weekX/notebooks/`, `weekX/scripts/`, and `weekX/source_notes/`.
 
 ## Student quick start
 
@@ -48,6 +49,8 @@ py -3.14 scripts\setup_environment.py
 ```
 
 Open a notebook under `week4/notebooks/` or `week5/notebooks/` in JupyterLab.
+
+For Week 7, follow the [Google Colab instructions](week7/README.md) and open the current notebook from GitHub in Colab.
 
 ## Verify the teaching materials
 
@@ -87,9 +90,9 @@ Rebuild notebook source after editing a week's builder:
 
 ## Dependency policy for future chapters
 
-`requirements.txt` is the single pinned environment for all published course notebooks. When a chapter needs a new package, add its exact tested version there and rerun the setup and notebook checks. Keeping one environment prevents students from having to guess which requirements file applies to a lesson.
+`requirements.txt` is the single pinned environment for the offline course notebooks. When an offline chapter needs a new package, add its exact tested version there and rerun the setup and notebook checks. Week 7 uses Colab's managed runtime and follows the setup steps in its own README.
 
-The automated notebook check discovers every `week*/notebooks/*.ipynb` file, so newly added weeks join continuous integration without editing the execution script.
+The automated notebook check discovers every `week*/notebooks/*.ipynb` file. Week 7 uses `week7/colab/` because it needs external downloads and longer training, so it is run interactively in Colab.
 
 ## Publishing to GitHub
 
